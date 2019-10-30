@@ -1,0 +1,231 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<style type="text/css">
+		.container{
+			display: flex;
+			flex-flow: wrap;
+			background-color:gray ;
+			height:800px;
+			width:800px;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+
+
+		}
+		.box1,.box3,.box5,.box6,.box7{
+			display:flex;
+			width: 90px;
+			height:120px;
+			background-color: white;
+			align-items: center;
+			border-radius: 8px;
+			
+		
+		}
+		.box1{
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		.box3{
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.box5{
+			flex-direction: column;
+			justify-content: center;
+		}
+
+        .box5-1{
+        	display:flex;
+			flex-wrap: wrap;
+			flex-direction:row;
+			justify-content: center;
+			align-items: flex-end;
+			height:50px;
+			width: 80px;
+        }
+        .box5-2{
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction:row;
+			justify-content: center;
+			align-items: center;
+			height:20px;
+			width: 80px;
+		}
+		.box5-3{
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction:row;
+			justify-content: center;
+			align-items: flex-start;
+			height:50px;
+			width: 80px;
+		}
+		.box6{
+			flex-direction: column;
+			justify-content: center;
+
+		}
+
+		.box6-1{
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction:row;
+			justify-content: center;
+			align-items: center;
+			height:30px;
+			width: 80px;
+
+		}
+		.box6-2{
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction:row;
+			justify-content: center;
+			align-items: flex-end;
+			height:30px;
+			width: 80px;
+		}
+		.box6-3{
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction:row;
+			justify-content: center;
+			align-items: flex-start;
+			height:30px;
+			width: 80px;
+		}
+
+		.box7{
+			flex-direction:column;
+			justify-content: center;
+			align-items: center;
+			
+
+		}
+		.box7-1{
+			display: flex;
+			flex-direction: column;
+			width: 65px;
+			height: 55px;
+			justify-content: center;
+			align-items:center;
+		}
+		.box7-2{
+			display:flex;
+			flex-direction: row;
+			width: 80px;
+			height: 30px;
+			justify-content: center;
+			align-items: flex-end;
+		}
+		.box7-3{
+			display: flex;
+			flex-direction: row;
+			width: 80px;
+			height: 30px;
+			justify-content: center;
+			align-items:flex-start;
+		}
+
+		.circle1{
+			display:flex;
+			width :30px;
+			height: 30px;
+			background-color: red;
+			border-radius: 25px;
+			border: solid 10px green;
+		}
+		
+		.circle4{
+			display:flex;
+			width:20px;
+			height:20px;
+			border-radius: 50%;
+			background-color: black;
+		}
+		
+		.circle5{
+			display:flex;
+			width:20px;
+			height:20px;
+			border-radius: 50%;
+			background-color: green;
+		}
+		.circle6{
+			display:flex;
+			width:20px;
+			height:20px;
+			border-radius: 50%;
+			background-color: red;
+		}
+
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		    <div class="box1">
+			    <div class="circle1"  ></div>
+			</div>
+		
+		    <div class="box3">
+			    <div class="circle4" style="align-self: end;margin: 10px 20px 5px 15px"></div>
+			    <div class="circle6"  ></div>    
+			    <div class="circle5" style="align-self:flex-end;margin:5px 15px 10px 20px"></div>
+		    </div>
+		    <div class="box5">
+		    	<div class="box5-1">
+		    	    <div class="circle5" style="margin: 30px 3px 0px 1px"></div>
+		    	    <div class="circle4" style="margin: 30px 1px 0px 3px"></div>
+		    	</div>  
+		    	<div class="box5-2"> 
+		    	    <div class="circle6" ></div>
+		    	</div>
+		    	<div class="box5-3">
+		    	    <div class="circle4" style="margin: 0px 3px 30px 1px" ></div>
+		    	    <div class="circle5" style="margin: 0px 3px 30px 1px"></div>
+		    	</div>    
+		    </div>
+		    <div class="box6">
+		        <div class="box6-1">
+		    	    <div class="circle5" ></div>
+		    	    <div class="circle5" ></div>
+		    	</div>
+		    	<div class="box6-2">
+		    	    <div class="circle6"></div>
+		    	    <div class="circle6"></div>
+		    	</div>
+		    	<div class="box6-3" >   
+		    	    <div class="circle6"></div>
+		    	    <div class="circle6"></div>
+		    	</div>   
+		    </div>
+		    <div class="box7">
+		        <div class="box7-1">
+		       
+		    	    <div class="circle5" style="align-self:flex-start; "></div>
+		    	    <div class="circle5" ></div>
+		    	    <div class="circle5" style="align-self: flex-end;"></div>
+		    	</div>    
+		    	
+		    	<div class="box7-2">    
+		    	    <div class="circle6"></div>
+		    	    <div class="circle6"></div>
+		    	</div>    
+		    	<div class="box7-3">    
+		    	    <div class="circle6"></div>
+		    	    <div class="circle6"></div>
+		    	</div>    
+		    </div>
+
+			
+		</div>
+	</body>
+</html>
